@@ -9,8 +9,9 @@ const BottomBar: React.FC = () => (
             width: '100%',
             flexDirection: 'row',
             alignItems: 'flex-end',
-            justifyContent: 'space-between'
-            // background: 'red'
+            justifyContent: 'space-between',
+            // background: 'red',
+            paddingBottom: '32px'
         }}
     >
         <Socials />

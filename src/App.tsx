@@ -8,7 +8,7 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <EssentialInfo />
-    </ThemeProvider>
+    </ThemeProvider> 
   );
 };
 
