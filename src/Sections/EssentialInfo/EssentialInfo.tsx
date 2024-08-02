@@ -14,7 +14,7 @@ const EssentialInfo: React.FC = () => (
         container
         sx={{
             width: '100vw',
-            height: '100dvh',
+            height: 'max-content',
             background: 'linear-gradient(241.42deg, #0F2A71 -10.17%, #00173F 87.1%)',
             alignItems: 'center',
             justifyContent: 'center',
@@ -23,8 +23,9 @@ const EssentialInfo: React.FC = () => (
                 md: '32px 0px 0px 0px'
             },
             position: 'relative',
-            overflowX: 'hidden',
-            overflowY: 'visible'
+            overflow: 'hidden'
+            // background: 'red',
+            // minHeight: '100vh !important'
         }}
     >
         <Grid
@@ -34,7 +35,7 @@ const EssentialInfo: React.FC = () => (
             md={10}
             sx={{
                 // width: '100%',
-                height: '100%',
+                height: 'calc(100vh - 32px)',
                 justifyContent: 'space-between',
                 flexDirection: 'column',
                 // background: 'red',
@@ -75,10 +76,11 @@ const EssentialInfo: React.FC = () => (
                 position: 'absolute',
                 zIndex: '1',
                 right: '-60px',
-                bottom: '-104px',
+                bottom: '10px',
                 // transform: 'rotate(21deg)',
                 height: '544px',
-                width: 'auto'
+                width: 'auto',
+                // background: 'green'
             }}
         />
         <Headphones
@@ -86,7 +88,7 @@ const EssentialInfo: React.FC = () => (
                 position: 'absolute',
                 zIndex: '1',
                 left: '-64px',
-                bottom: '-64px',
+                bottom: '52px',
                 transform: 'rotate(10deg)',
                 height: '520px',
                 width: 'auto',
