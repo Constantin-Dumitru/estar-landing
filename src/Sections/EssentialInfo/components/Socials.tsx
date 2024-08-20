@@ -9,7 +9,11 @@ const Socials: React.FC = () => (
             gap: '16px',
             alignItems: 'center',
             padding: '16px',
-            borderRadius: '20px'
+            borderRadius: '20px',
+            display: {
+                xs: 'none',
+                md: 'flex'
+            }
         }}
     >
         <Typography color={'#F4C501'}>

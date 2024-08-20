@@ -27,6 +27,7 @@ const Title: React.FC = () => {
         left: "50%",
         transform: "translate(-50%, -50%)",
         alignItems: "center",
+        // background: 'red'
       }}
       spacing={-2}
     >
@@ -37,6 +38,7 @@ const Title: React.FC = () => {
             backgroundClip: "text",
             WebkitTextFillColor: "transparent",
             fontSize: {
+              // xs: "clamp(1.5rem, 20vw, 10.25rem)",
               xs: "64px",
               sm: "108px",
               md: "132px",

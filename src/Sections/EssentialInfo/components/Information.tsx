@@ -9,7 +9,10 @@ interface Props {
 const Information: React.FC<Props> = ({title, text}) => (
     <Stack
         sx={{
-            alignItems: 'center',
+            alignItems: {
+                xs: 'flex-start',
+                md: 'center',
+            },
             gap: '2px',
             // width: '100%',
             '>*': {
@@ -21,7 +24,7 @@ const Information: React.FC<Props> = ({title, text}) => (
         <Typography
             sx={{
                 color: '#F4C501',
-                fontSize: '20px'
+                fontSize: '1.25rem'
             }}
         >
             {title}

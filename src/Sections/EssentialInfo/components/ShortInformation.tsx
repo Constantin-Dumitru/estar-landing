@@ -12,7 +12,7 @@ const ShortInformation: React.FC = () => (
       // background: 'red',
       alignItems: "center",
       justifyContent: "center",
-      padding: "32px 0px",
+      padding: "32px",
       backdropFilter: "blur(4px)",
     }}
   >
@@ -25,7 +25,10 @@ const ShortInformation: React.FC = () => (
         alignItems: "center",
         // background: 'blue',
         '>*':{
-            width: 'calc(33.3% - 32px)'
+            width: {
+              xs: '100%',
+              md: 'calc(33.3% - 32px)',
+          }
         },
         gap: '32px',
         justifyContent: 'space-between',

@@ -6,11 +6,15 @@ import { ArrowIcon } from "../../../shared/icons";
 const ScrollDown: React.FC = () => (
     <BlurContainer
         sx={{
-            padding: '16px',
+            padding: '1rem',
             borderRadius: '20px',
             flexDirection: 'row',
             alignItems: 'center',
-            gap: '16px'
+            gap: '16px',
+            display: {
+                xs: 'none',
+                md: 'flex'
+            }
         }}
     >
         <Typography>

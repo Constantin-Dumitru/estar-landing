@@ -23,7 +23,7 @@ const SecondRow: React.FC<Props> = ({gameName, gameDescription, gameLink = null}
         }}
     >
         <Stack>
-            <Typography sx={{fontSize: '20px'}}>{gameName}</Typography>
+            <Typography sx={{fontSize: '1.25rem'}}>{gameName}</Typography>
             <Typography color="#999">{gameDescription}</Typography>
         </Stack>
 

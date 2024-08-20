@@ -1,6 +1,5 @@
 import React from 'react'
-import { Grid, Typography } from '@mui/material'
-import { EstarLogo } from '../../shared/icons'
+import { Grid } from '@mui/material'
 import NavBar from './components/NavBar'
 import BottomBar from './components/BottomBar'
 import GridBackground from '../../components/GridBackground'
@@ -19,7 +18,7 @@ const EssentialInfo: React.FC = () => (
             alignItems: 'center',
             justifyContent: 'center',
             padding: {
-                xs: '32px 32px 0px 32px',
+                xs: '32px 0px 0px 0px',
                 md: '32px 0px 0px 0px'
             },
             position: 'relative',
@@ -40,7 +39,12 @@ const EssentialInfo: React.FC = () => (
                 flexDirection: 'column',
                 // background: 'red',
                 alignItems: 'center',
-                zIndex: '2'
+                zIndex: '2',
+                position: 'relative',
+                padding: {
+                    xs: '0px 32px 0px 32px',
+                    md: '0px'
+                }
             }}
         >
             <NavBar />
@@ -90,7 +94,7 @@ const EssentialInfo: React.FC = () => (
                 left: '-64px',
                 bottom: '52px',
                 transform: 'rotate(10deg)',
-                height: '520px',
+                height: 'clamp(202px, 50vh, 502px)',
                 width: 'auto',
                 // background: 'red'
             }}

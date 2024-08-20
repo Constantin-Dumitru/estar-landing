@@ -8,7 +8,7 @@ const NavBar: React.FC = () => (
         sx={{
             width: '100%',
             flexDirection: 'row',
-            borderRadius: '20px',
+            borderRadius: '1.25rem',
             padding: '24px',
             alignItems: 'center',
             justifyContent: 'space-between'

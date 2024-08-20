@@ -1,8 +1,9 @@
 import React from 'react';
-import { ThemeProvider, Typography } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 import theme from './shared/theme/Theme';
 import './App.css';
 import { EssentialInfo, Games, Token } from './Sections';
+import MemberBenefits from './Sections/MemberBenefits';
 
 const App: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const App: React.FC = () => {
       <EssentialInfo />
       <Games />
       <Token />
+      <MemberBenefits />
     </ThemeProvider> 
   );
 };

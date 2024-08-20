@@ -14,7 +14,7 @@ const SectionTitle: React.FC<Props> = ({ firstWord, secondWord, sx, ...rest }) =
                 WebkitTextFillColor: "transparent",
                 fontWeight: '700',
                 fontSize: {
-                    xs: '64px'
+                    xs: 'clamp(20px, 2vw + 1rem, 64px)'
                 }
             },
             // background: 'red',
