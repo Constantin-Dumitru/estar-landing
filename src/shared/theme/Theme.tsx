@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
-  typography: {
+  typography: {    
     fontFamily: 'Montserrat, Arial, sans-serif',
     fontWeightBold: 'bold',
     allVariants: {

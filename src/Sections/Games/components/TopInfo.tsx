@@ -1,5 +1,5 @@
 import React from 'react'
-import { Stack, Typography } from '@mui/material'
+import { Stack, Typography, useMediaQuery, useTheme } from '@mui/material'
 import SectionTitle from '../../../components/SectionTitle'
 import BlurContainer from '../../../components/BlurContainer'
 
@@ -7,8 +7,14 @@ const TopInfo: React.FC = () => (
     <Stack
         sx={{
             flexDirection: 'row',
-            alignItems: 'flex-start',
-            justifyContent: 'space-between',
+            alignItems: {
+                xs: 'center',
+                md: 'flex-start',
+            },
+            justifyContent: {
+                xs: 'center',
+                md: 'space-between',
+            },
             width: '100%'
         }}
     >
@@ -17,7 +23,10 @@ const TopInfo: React.FC = () => (
                     firstWord="FEATURED"
                     secondWord="GAMES"
                     sx={{
-                        flexDirection: 'column',
+                        flexDirection: {
+                            xs: 'row',
+                            md: 'column',
+                        },
                     }}
                     spacing={-4}
                 />
@@ -34,7 +43,11 @@ const TopInfo: React.FC = () => (
         <BlurContainer
             sx={{
                 padding: '16px',
-                borderRadius: '20px'
+                borderRadius: '20px',
+                display: {
+                    xs: 'none',
+                    md: 'flex'
+                }
             }}
         >
             <Typography>

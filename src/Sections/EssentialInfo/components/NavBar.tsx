@@ -1,7 +1,7 @@
 import React from 'react'
-import { Typography } from '@mui/material'
 import BlurContainer from '../../../components/BlurContainer'
 import { EstarLogo } from '../../../shared/icons'
+import NavLinks from './NavLinks'
 
 const NavBar: React.FC = () => (
     <BlurContainer
@@ -15,7 +15,7 @@ const NavBar: React.FC = () => (
         }}
     >
         <EstarLogo sx={{ fill: "#F4C501", height: '24px', width: 'auto' }}/>
-        <Typography>Pula</Typography>
+        <NavLinks />
     </BlurContainer>
 )
 

@@ -16,7 +16,8 @@ const BenefitContainer: React.FC<Props> = ({title, description}) => (
             '>*': {
                 textTransform: 'uppercase',
                 textAlign: 'center'
-            }
+            },
+            minHeight: '10rem'
         }}
     >
         <Typography fontSize={'1.25rem'}>{title}</Typography>
